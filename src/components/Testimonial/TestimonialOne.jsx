@@ -9,10 +9,10 @@ import shapeFour from "/assets/imgs/shape/ts-shape-4.webp";
 
 export default function TestimonialOne() {
   const swiperOptions = {
-    slidesPerView: 2,
+    slidesPerView: 4,
     spaceBetween: 30,
     speed: 2000,
-    freeMode: true,
+    // freeMode: true,
     centeredSlides: true,
     loop: true,
     navigation: {
@@ -34,7 +34,7 @@ export default function TestimonialOne() {
         spaceBetween: 30,
       },
       1200: {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 30,
       },
     },
@@ -42,13 +42,26 @@ export default function TestimonialOne() {
   return (
     <section className="testimonial__area pt-110 pb-130">
       <div className="testimonial__wrapper">
-        <div className="testimonial__title-wrap text-center">
+        <div className="testimonial__title-wrap">
           {data.title && (
             <h2 className="section-title move-line-3d">
               {data.title}
-              {data.highlightedTitle && <span> {data.highlightedTitle}</span>}
             </h2>
           )}
+          {data.subtitle && (
+            <p className="section-subtitle move-line-3d">
+              {data.subtitle}
+            </p>
+          )}
+
+          <div className="testimonial__tags-container">
+            <div className="testimonial__tags">
+              <span>Placement Guarantee Course</span>
+            </div>
+            <div className="testimonial__tags">
+              <span>Get a Job or Refund</span>
+            </div>
+          </div>
         </div>
         {data.testimonials && data.testimonials.length > 0 && (
           <Swiper {...swiperOptions} className="swiper testimonial__slider">
@@ -57,10 +70,6 @@ export default function TestimonialOne() {
                 key={index}
                 className="swiper-slide testimonial__slide"
               >
-                <img src={testimonial.quoteTopIcon} alt="Icon" />
-                <p className="testimonial__content">
-                  {testimonial.description}
-                </p>
                 <div className="testimonial__client-info">
                   <div className="testimonial__client-img">
                     <img src={testimonial.image} alt="Image" />
@@ -74,11 +83,20 @@ export default function TestimonialOne() {
                     </h4>
                   </div>
                 </div>
-                <img
+                {/* <img src={testimonial.quoteTopIcon} alt="Icon" /> */}
+                <p className="testimonial__content">
+                  {testimonial.description}
+                </p>
+                {/* <img
                   className="testimonial__icon-btm"
                   src={testimonial.quoteBottomIcon}
                   alt="Icon"
-                />
+                /> */}
+                <div className="testimonial__tags">
+                  {testimonial.tags.map((tag, index) => (
+                    <span key={index}>{tag}</span>
+                  ))}
+                </div>
               </SwiperSlide>
             ))}
             {/* <!-- Naviagation  --> */}

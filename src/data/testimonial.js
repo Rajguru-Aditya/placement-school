@@ -8,7 +8,8 @@ import LeftIcon from "/assets/imgs/icon/ts-icon-left.webp";
 import RightIcon from "/assets/imgs/icon/ts-icon-right.webp";
 
 const testimonialOne = {
-  title: "Feedback from Our",
+  title:"Success Stories",
+  subtitle: "We offer a diverse range of courses designed to help you acquire new skills, advance your career, and achieve your professional goals. Each course is carefully crafted to provide you with practical knowledge and hands-on experience in your chosen field.",
   highlightedTitle: "Student",
   navigation: {
     leftIcon: LeftIcon,
@@ -18,47 +19,52 @@ const testimonialOne = {
     {
       quoteTopIcon: quoteTopIcon,
       quoteBottomIcon: quoteBottomIcon,
-      image: TestimonialOneImageOne,
+      image: "https://plus.unsplash.com/premium_photo-1661351581394-9a7ad06d2ded?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "What a great course so far! Very easy to follow, clear, and concise. Great instructor. Just subscribed to your group.",
+        "The UI/UX Design course exceeded my expectations. I learned everything from user research to usability testing, and the portfolio projects helped me showcase my skills to potential employers. The support during the job search was incredible and led me to my dream role.",
       name: "Oliva Marry",
       designation: "Student",
+      tags: ["Digital Marketing"],
     },
     {
       quoteTopIcon: quoteTopIcon,
       quoteBottomIcon: quoteBottomIcon,
-      image: TestimonialOneImageTwo,
+      image: "https://images.unsplash.com/photo-1683107695974-98a9fddb249a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "What a great course so far! Very easy to follow, clear, and concise. Great instructor. Just subscribed to your group.",
+        "The Digital Marketing course was a game-changer for me. The comprehensive curriculum and hands-on projects equipped me with the skills needed to land a top position in a leading company. The Placement Guarantee was a huge relief and it worked as promised. Highly recommend!",
       name: "Oliva Marry",
       designation: "Student",
+      tags: ["SEO"],
     },
     {
       quoteTopIcon: quoteTopIcon,
       quoteBottomIcon: quoteBottomIcon,
-      image: TestimonialOneImageThree,
+      image: "https://images.unsplash.com/photo-1683186056869-3c646fec667c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "What a great course so far! Very easy to follow, clear, and concise. Great instructor. Just subscribed to your group.",
+        "The Development course provided me with a solid understanding of both front-end and back-end technologies. The hands-on projects were challenging but rewarding, and the Placement Guarantee helped me land a job at a top tech company. This course is worth every penny!",
       name: "Oliva Marry",
       designation: "Student",
+      tags: ["Marketing"],
     },
     {
       quoteTopIcon: quoteTopIcon,
       quoteBottomIcon: quoteBottomIcon,
-      image: TestimonialOneImageFour,
+      image: "https://images.unsplash.com/photo-1683208529938-8a7fb89c855f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
         "What a great course so far! Very easy to follow, clear, and concise. Great instructor. Just subscribed to your group.",
       name: "Oliva Marry",
       designation: "Student",
+      tags: ["SEO"],
     },
     {
       quoteTopIcon: quoteTopIcon,
       quoteBottomIcon: quoteBottomIcon,
-      image: TestimonialOneImageThree,
+      image: "https://images.unsplash.com/photo-1682343195427-526edae3cdbc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "What a great course so far! Very easy to follow, clear, and concise. Great instructor. Just subscribed to your group.",
+        "The Digital Marketing course was a game-changer for me. The comprehensive curriculum and hands-on projects equipped me with the skills needed to land a top position in a leading company. The Placement Guarantee was a huge relief and it worked as promised. Highly recommend!",
       name: "Oliva Marry",
       designation: "Student",
+      tags: ["Digital Marketing"],
     },
   ],
 };
@@ -85,6 +91,7 @@ const testimonialTwo = [
     shapeTwo: TestimonialTwoShapeTwo,
     name: "Stuart Law",
     designation: "Student",
+    tags: ["Digital Marketing", "SEO", "Marketing"],
     description:
       "I'm thoroughly enjoying the course! It's incredibly well-structured, easy to follow, and the instructor's clarity is outstanding.",
   },

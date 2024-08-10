@@ -4,7 +4,7 @@ import CourseOne from "@/components/Course/CourseOne";
 import ServiceOne from "@/components/Service/ServiceOne";
 import BlogOne from "@/components/Blog/BlogOne";
 import LayoutOne from "@/components/Layout/LayoutOne";
-import TestimonialOne from "@/components/Testimonial/TestimonialOne";
+import TestimonialSuccessOne from "@/components/Testimonial/TestimonialOne";
 import InstructorOne from "@/components/Instructor/InstructorOne";
 import CounterOne from "@/components/Counter/CounterOne";
 import CtaOne from "@/components/CTA/CtaOne";
@@ -15,11 +15,11 @@ export default function HomePage() {
     <LayoutOne>
       <main>
         <HeroOne />
-        <PartnerOne />
+        {/* <PartnerOne /> */}
         {/* <AboutOne /> */}
-        <CourseOne />
-        {/* <TestimonialOne /> */}
-        <ServiceOne />
+        {/* <CourseOne /> */}
+        <TestimonialSuccessOne />
+        {/* <ServiceOne /> */}
         {/* <InstructorOne /> */}
         {/* <CounterOne /> */}
         <BlogOne />
