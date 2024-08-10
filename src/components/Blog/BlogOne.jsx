@@ -1,5 +1,10 @@
 import { blogOne as data } from "@/data/blog";
 import BlogCardOne from "@/components/Card/Blog/BlogCardOne";
+import Accordion from '@mui/material/Accordion';
+import AccordionActions from '@mui/material/AccordionActions';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 export default function BlogOne() {
   return (
     <section className="blog__area pt-100 pb-120">
@@ -9,7 +14,7 @@ export default function BlogOne() {
             {data.title && (
               <div className="blog__title-wrap text-center move-line-3d">
                 <h2 className="section-title">
-                  {data.title.sliceOne} <span>{data.title.sliceTwo}</span>
+                  {data.title.sliceOne}
                 </h2>
               </div>
             )}
@@ -20,10 +25,31 @@ export default function BlogOne() {
             {data.blogs.map((blog, index) => (
               <div
                 key={index}
-                className={`col-xl-4 col-lg-4 col-md-6 ${blog.animation.name}`}
+                className={` ${blog.animation.name}`}
                 data-delay={blog.animation.delay}
               >
-                <BlogCardOne blog={blog} />
+                {/* <BlogCardOne blog={blog} /> */}
+                <Accordion style={{
+                  backgroundColor: "#E2E2E2",
+                  boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
+                  borderRadius: "10px",
+                  marginBottom: "20px",
+                  padding: "10px",
+                  boxSizing: "border-box",
+                }}>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1-content"
+                    id="panel1-header"
+                  >
+                    <h3
+                      className="blog__title"
+                    >{blog.title}</h3>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <p className="blog__content">{blog.description}</p>
+                  </AccordionDetails>
+                </Accordion>
               </div>
             ))}
           </div>

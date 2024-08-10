@@ -126,6 +126,7 @@
     font-weight: 700;
     line-height: 1.1;
     max-width: 660px;
+    text-align: left;
     @media #{$xxl} {
       font-size: 46px;
       max-width: 500px;
@@ -160,6 +161,7 @@
     padding: 25px 0px 30px;
     line-height: 2;
     max-width: 500px;
+    text-align: left;
     @media #{$xl} {
       max-width: 400px;
     }
@@ -269,14 +271,13 @@
 
 .hero__area {
   .hero__left {
-    margin-top: -135px; 
+    margin-top: 100px; 
     flex: 1;
-    @media #{$xxl} {
-      margin-top: 0px;
-    }
-    @media #{$lg} {
-      margin-top: 20px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 8rem;
     @media #{$sm} {
       width: 100%;
     }
