@@ -23,7 +23,7 @@ export default function HomePage() {
         {/* <InstructorOne /> */}
         {/* <CounterOne /> */}
         <BlogOne />
-        <CtaOne />
+        {/* <CtaOne /> */}
       </main>
     </LayoutOne>
   );

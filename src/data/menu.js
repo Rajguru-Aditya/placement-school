@@ -125,130 +125,142 @@ const menus = [
   {
     name: "Home",
     link: "#",
-    megaMenu: megaMenuOne,
-    subMenus: [
-      {
-        link: "/online-course",
-        name: "Online Course",
-      },
-      {
-        link: "/children-education",
-        name: "Kids Education",
-      },
-      {
-        link: "/health-coach",
-        name: "Health Course",
-      },
-    ],
+    // megaMenu: megaMenuOne,
+    // subMenus: [
+    //   {
+    //     link: "/online-course",
+    //     name: "Online Course",
+    //   },
+    //   {
+    //     link: "/children-education",
+    //     name: "Kids Education",
+    //   },
+    //   {
+    //     link: "/health-coach",
+    //     name: "Health Course",
+    //   },
+    // ],
   },
-  {
-    name: "About",
-    link: "/about",
-  },
-  {
-    name: "Courses",
+    {
+    name: "Reviews",
     link: "#",
-    subMenus: [
-      {
-        name: "Course List",
-        link: "/courses",
-      },
-      {
-        name: "Course Detail",
-        link: "/course-detail",
-      },
-      {
-        name: "Course Filter",
-        link: "/course-filter",
-      },
-    ],
+
   },
   {
-    name: "Pages",
+    name: "FAQ",
     link: "#",
-    subMenus: [
-      {
-        name: "Instructor",
-        link: "/instructors",
-      },
-      {
-        name: "Instructor Detail",
-        link: "/instructor-detail",
-      },
-      {
-        name: "404",
-        link: "not-found",
-      },
-    ],
+
   },
-  {
-    name: "Blog",
-    link: "#",
-    subMenus: [
-      {
-        name: "Blog List",
-        link: "/blogs",
-      },
-      {
-        name: "Blog Sidebar",
-        link: "#",
-        menus: [
-          {
-            name: "Right Sidebar",
-            link: "/blogs",
-          },
-          {
-            name: "Left Sidebar",
-            link: "/blog-left-sidebar",
-          },
-        ],
-      },
-      {
-        name: "Blog Layout",
-        link: "#",
-        menus: [
-          {
-            name: "1 Column",
-            link: "/blog-column-one",
-          },
-          {
-            name: "2 Column",
-            link: "/blog-column-two",
-          },
-          {
-            name: "3 Column",
-            link: "/blog-column-three",
-          },
-          {
-            name: "4 Column",
-            link: "/blog-column-four",
-          },
-        ],
-      },
-      {
-        name: "Blog Details",
-        link: "#",
-        menus: [
-          {
-            name: "Right Sidebar",
-            link: "/blog-detail-right-sidebar",
-          },
-          {
-            name: "Left Sidebar",
-            link: "/blog-detail-left-sidebar",
-          },
-          {
-            name: "Without Sidebar",
-            link: "/blog-detail",
-          },
-        ],
-      },
-    ],
-  },
-  {
+    {
     name: "Conatct",
     link: "/contact",
   },
+
+  {
+    name: "Courses",
+    link: "#",
+    // subMenus: [
+    //   {
+    //     name: "Course List",
+    //     link: "/courses",
+    //   },
+    //   {
+    //     name: "Course Detail",
+    //     link: "/course-detail",
+    //   },
+    //   {
+    //     name: "Course Filter",
+    //     link: "/course-filter",
+    //   },
+    // ],
+  },
+    // {
+  //   name: "About",
+  //   link: "/about",
+  // },
+  // {
+  //   name: "Pages",
+  //   link: "#",
+  //   // subMenus: [
+  //   //   {
+  //   //     name: "Instructor",
+  //   //     link: "/instructors",
+  //   //   },
+  //   //   {
+  //   //     name: "Instructor Detail",
+  //   //     link: "/instructor-detail",
+  //   //   },
+  //   //   {
+  //   //     name: "404",
+  //   //     link: "not-found",
+  //   //   },
+  //   // ],
+  // },
+  // {
+  //   name: "Blog",
+  //   link: "#",
+  //   // subMenus: [
+  //   //   {
+  //   //     name: "Blog List",
+  //   //     link: "/blogs",
+  //   //   },
+  //   //   {
+  //   //     name: "Blog Sidebar",
+  //   //     link: "#",
+  //   //     menus: [
+  //   //       {
+  //   //         name: "Right Sidebar",
+  //   //         link: "/blogs",
+  //   //       },
+  //   //       {
+  //   //         name: "Left Sidebar",
+  //   //         link: "/blog-left-sidebar",
+  //   //       },
+  //   //     ],
+  //   //   },
+  //   //   {
+  //   //     name: "Blog Layout",
+  //   //     link: "#",
+  //   //     menus: [
+  //   //       {
+  //   //         name: "1 Column",
+  //   //         link: "/blog-column-one",
+  //   //       },
+  //   //       {
+  //   //         name: "2 Column",
+  //   //         link: "/blog-column-two",
+  //   //       },
+  //   //       {
+  //   //         name: "3 Column",
+  //   //         link: "/blog-column-three",
+  //   //       },
+  //   //       {
+  //   //         name: "4 Column",
+  //   //         link: "/blog-column-four",
+  //   //       },
+  //   //     ],
+  //   //   },
+  //   //   {
+  //   //     name: "Blog Details",
+  //   //     link: "#",
+  //   //     menus: [
+  //   //       {
+  //   //         name: "Right Sidebar",
+  //   //         link: "/blog-detail-right-sidebar",
+  //   //       },
+  //   //       {
+  //   //         name: "Left Sidebar",
+  //   //         link: "/blog-detail-left-sidebar",
+  //   //       },
+  //   //       {
+  //   //         name: "Without Sidebar",
+  //   //         link: "/blog-detail",
+  //   //       },
+  //   //     ],
+  //   //   },
+  //   // ],
+  // },
+
 ];
 
 export default menus;
