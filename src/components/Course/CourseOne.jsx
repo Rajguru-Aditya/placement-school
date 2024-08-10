@@ -7,7 +7,6 @@ import Isotope from "isotope-layout";
 
 export default function CourseOne() {
   const isotope = useRef();
-  const [filterType, setFilterType] = useState("*");
 
   useEffect(() => {
     isotope.current = new Isotope(".course__wrapper", {
@@ -24,42 +23,21 @@ export default function CourseOne() {
       isotope.current.layout();
     });
   }, []);
-  // handling filter key change
-  useEffect(() => {
-    if (isotope.current) {
-      filterType === "*"
-        ? isotope.current.arrange({ filter: `*` })
-        : isotope.current.arrange({ filter: `.${filterType}` });
-    }
-  }, [filterType]);
 
-  const handleFilterTypeChange = (key) => () => setFilterType(key);
   return (
     <section className="course__area pt-110 pb-130">
       <div className="container">
         <div className="course__top-wrap">
           {data.title && (
             <h2 className="section-title move-line-3d">
-              {data.title.sliceOne} <span>{data.title.sliceTwo}</span>
+              {data.title.sliceOne}
             </h2>
           )}
+          
+            <p className="section-subtitle move-line-3d">
+              {data.subtitle}
+            </p>
           {/* <!-- Tab button   --> */}
-          {data.filterOptions && data.filterOptions.length > 0 && (
-            <div className="course__tab-wrap fade-slide right">
-              {data.filterOptions.map((option, index) => (
-                <button
-                  key={index}
-                  className={`course__btn ${
-                    filterType == option.target ? "active" : ""
-                  }`}
-                  data-filter={`.${option.target}`}
-                  onClick={handleFilterTypeChange(option.target)}
-                >
-                  {option.name}
-                </button>
-              ))}
-            </div>
-          )}
           {/* <!-- Tab button   --> */}
         </div>
         <div className="row course__wrapper fade-slide bottom">
@@ -72,7 +50,7 @@ export default function CourseOne() {
             </div>
           ))}
         </div>
-        {data.more && (
+        {/* {data.more && (
           <div className="course__btm">
             <Link
               className="btn-primary btn-hover-shadow"
@@ -88,7 +66,7 @@ export default function CourseOne() {
               )}
             </Link>
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );

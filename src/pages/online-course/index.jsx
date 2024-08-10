@@ -16,12 +16,12 @@ export default function HomePage() {
       <main>
         <HeroOne />
         <PartnerOne />
-        <AboutOne />
+        {/* <AboutOne /> */}
         <CourseOne />
-        <TestimonialOne />
+        {/* <TestimonialOne /> */}
         <ServiceOne />
-        <InstructorOne />
-        <CounterOne />
+        {/* <InstructorOne /> */}
+        {/* <CounterOne /> */}
         <BlogOne />
         <CtaOne />
       </main>

@@ -23,7 +23,7 @@
     }
 
     .course__sliderActive .course__item {
-      box-shadow: 0px -19px 63px 0px rgba(53, 24, 12, 0.1);
+      // box-shadow: 0px -19px 63px 0px rgba(53, 24, 12, 0.1);
     }
   }
 
@@ -35,6 +35,11 @@
     position: relative;
     border-radius: 20px;
     overflow: hidden;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.7s;
     &::before {
       position: absolute;
       top: 0px;
@@ -63,9 +68,11 @@
 
   &__top-wrap {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 50px;
+    gap: 30px;
     @media #{$md} {
       padding-bottom: 30px;
     }
@@ -76,13 +83,14 @@
     }
 
     .section-title {
-      max-width: 450px;
+      width: 100%;
+      text-align: center;
       span {
         display: block;
       }
       @media #{$md} {
         font-size: 36px;
-        text-align: left;
+        text-align: center;
       }
       @media #{$sm} {
         font-size: 32px;
@@ -92,6 +100,19 @@
         }
       }
     }
+        .section-subtitle {
+          width: 100%;
+          text-align: left;
+          span {
+            display: block;
+          }
+          font-size: 18px;
+          font-weight: 400;
+          @media #{$md} {
+            font-size: 14px;
+            text-align: center;
+          }
+        }
   }
   &__tab-wrap {
     display: flex;
@@ -162,8 +183,8 @@
     border-radius: 30px;
     padding-bottom: 30px;
     position: relative;
-    box-shadow: 0px 45px 60px 0px rgba(53, 24, 12, 0.1);
     margin-bottom: 30px;
+    margin-top: 30px;
     display: inline-block;
     transition: var(--transition);
     @media #{$sm} {
@@ -288,7 +309,7 @@
     font-size: 25px;
     font-weight: 700;
     line-height: 1.2;
-    padding: 12px 45px 23px 30px;
+    padding: 12px 45px 23px 0px;
     a {
       color: var(--black-2);
       &:hover {
@@ -306,6 +327,13 @@
   &__btm {
     text-align: center;
   }
+}
+
+.course__thumb{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .course__item:hover {

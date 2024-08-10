@@ -20,9 +20,9 @@ import RightArrowWhiteIcon from "/assets/imgs/icon/arrow-right-white.svg";
 
 const courseOne = {
   title: {
-    sliceOne: "Explore popular",
-    sliceTwo: "Course",
+    sliceOne: "Success Stories",
   },
+  subtitle: "We offer a diverse range of courses designed to help you acquire new skills, advance your career, and achieve your professional goals. Each course is carefully crafted to provide you with practical knowledge and hands-on experience in your chosen field.",
   filterOptions: [
     {
       name: "All",
@@ -43,13 +43,14 @@ const courseOne = {
   ],
   courses: [
     {
-      image: CourseImageOne,
+      image: "https://plus.unsplash.com/premium_photo-1661774861781-e540fbc29330?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       instructor: {
         image: InstructorImageFive,
         name: "Jackie Rippin",
       },
       wishlistIcon: WishListIcon,
-      title: "Web Development For Beginners How To Use HTML5",
+      title: " Aisha Patel, 31",
+      company: "Cognizant",
       price: "$19.00",
       link: "course-detail",
       filterClass: "trending",
@@ -77,13 +78,14 @@ const courseOne = {
       arrowIcon: RightArrowRedIcon,
     },
     {
-      image: CourseImageTwo,
+      image: "https://images.unsplash.com/photo-1511376979163-f804dff7ad7b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       instructor: {
         image: InstructorImageOne,
         name: "Jackie Rippin",
       },
       wishlistIcon: WishListIcon,
-      title: "Crafting User-Friendly Interfaces Design",
+      title: " Aisha Patel, 31",
+      company: "Cognizant",
       price: "$9.00",
       link: "course-detail",
       filterClass: "trending",
@@ -111,118 +113,17 @@ const courseOne = {
       arrowIcon: RightArrowRedIcon,
     },
     {
-      image: CourseImageFour,
+      image: "https://images.unsplash.com/photo-1437572848259-df63caa1a552?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       instructor: {
         image: InstructorImageTwo,
         name: "Jackie Rippin",
       },
       wishlistIcon: WishListIcon,
-      title: "Responsive Web Design: Creating Sites for Any Device",
+      title: " Aisha Patel, 31",
+      company: "Cognizant",
       price: "$15.00",
       link: "course-detail",
       filterClass: "popular",
-      categories: [
-        {
-          name: "Trending",
-          link: "categories",
-        },
-      ],
-      meta: [
-        {
-          icon: StarRedIcon,
-          description: "4.9 Rating",
-        },
-        {
-          icon: StatusIcon,
-          description: "Beginner",
-        },
-        {
-          icon: UserGroupIcon,
-          description: "5K+ Students",
-        },
-      ],
-      enrollBtnText: "Enroll Now",
-      arrowIcon: RightArrowRedIcon,
-    },
-    {
-      image: CourseImageThree,
-      instructor: {
-        image: InstructorImageThree,
-        name: "Jackie Rippin",
-      },
-      wishlistIcon: WishListIcon,
-      title: "HTML & CSS Fundamentals: Building the Web from Scratch",
-      price: "$13.00",
-      link: "course-detail",
-      filterClass: "popular",
-      categories: [
-        {
-          name: "Trending",
-          link: "categories",
-        },
-      ],
-      meta: [
-        {
-          icon: StarRedIcon,
-          description: "4.9 Rating",
-        },
-        {
-          icon: StatusIcon,
-          description: "Beginner",
-        },
-        {
-          icon: UserGroupIcon,
-          description: "5K+ Students",
-        },
-      ],
-      enrollBtnText: "Enroll Now",
-      arrowIcon: RightArrowRedIcon,
-    },
-    {
-      image: CourseImageFour,
-      instructor: {
-        image: InstructorImageFour,
-        name: "Jackie Rippin",
-      },
-      wishlistIcon: WishListIcon,
-      title: "UI/UX Design Principles: Enhancing User Experience",
-      price: "$11.00",
-      link: "course-detail",
-      filterClass: "featured",
-      categories: [
-        {
-          name: "Trending",
-          link: "categories",
-        },
-      ],
-      meta: [
-        {
-          icon: StarRedIcon,
-          description: "4.9 Rating",
-        },
-        {
-          icon: StatusIcon,
-          description: "Beginner",
-        },
-        {
-          icon: UserGroupIcon,
-          description: "5K+ Students",
-        },
-      ],
-      enrollBtnText: "Enroll Now",
-      arrowIcon: RightArrowRedIcon,
-    },
-    {
-      image: CourseImageSix,
-      instructor: {
-        image: InstructorImageFive,
-        name: "Jackie Rippin",
-      },
-      wishlistIcon: WishListIcon,
-      title: "Web Design Trends: Staying Current in a Dynamic Field",
-      price: "$17.00",
-      link: "course-detail",
-      filterClass: "featured",
       categories: [
         {
           name: "Trending",
