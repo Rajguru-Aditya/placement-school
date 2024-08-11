@@ -161,6 +161,8 @@ import CourseTwoImageThree from "/assets/imgs/thumb/course-four-3.webp";
 
 const courseTwo = {
   title: "Explore Our Course",
+  subtitle: "We offer a diverse range of courses designed to help you acquire new skills, advance your career, and achieve your professional goals. Each course is carefully crafted to provide you with practical knowledge and hands-on experience in your chosen field.",
+  objectives: ["Placement Guarantee Course", "Get a Job or 100% Refund"],
   btn: {
     text: "View all course",
     link: "/",
@@ -182,6 +184,7 @@ const courseTwo = {
         name: "fade-slide bottom",
         delay: "0.4",
       },
+      features:["6 months", "200+ hrs content"]
     },
     {
       image: "https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149051556.jpg?t=st=1723377178~exp=1723380778~hmac=d5658ac732423a744fa6a2fe3fad8d5a4b677bc53b890190262215b213949919&w=1060",
@@ -199,6 +202,7 @@ const courseTwo = {
         name: "fade-slide bottom",
         delay: "0.6",
       },
+      features:["6 months", "200+ hrs content"]
     },
     {
       image: "https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?t=st=1723377268~exp=1723380868~hmac=3e0a4862dcac17f31f3aa76b7279106c75ad7376f64b7bb1f9c9daef02b665c5&w=740",
@@ -216,6 +220,7 @@ const courseTwo = {
         name: "fade-slide bottom",
         delay: "0.8",
       },
+      features:["6 months", "200+ hrs content"]
     },
   ],
 };

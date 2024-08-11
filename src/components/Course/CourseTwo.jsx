@@ -11,6 +11,16 @@ export default function CourseTwo() {
             <h2 className="section-title move-line-3d">{data.title}</h2>
           )}
         </div>
+        <div className="course__ObjectiveWrap">
+          {data.objectives && data.objectives.map((obj, index) => (
+            <div key={index} className="course__ObjectiveItem">
+              <p>{obj}</p>
+            </div>
+          ))}
+        </div>
+        <div>
+          {data.subtitle && <p className="course__subtitle-4">{data.subtitle}</p>}
+        </div>
         {data.courses && data.courses.length > 0 && (
           <div className="course__wrapper-2">
             {data.courses.map((course, index) => (

@@ -15,17 +15,23 @@ export default function CourseCardTwo({ course }) {
         <img className="course__thumb-4" src={course.image} alt="Course" />
       )}
       <div className="course__contentWrap">
-        <div className="course__priceWrap-4 text-center">
-          
+        <div className="course__contentTop">
+          <div className="course__featuresWrap">
+            {course.features && course.features.map((feature, index) => (
+              <div key={index} className="course__featureItem">
+                <p>{feature}</p>
+              </div>
+            ))}
+          </div>
+          {course.title && (
+            <h3 className="course__title">
+              <Link to={course.link}>{course.title}</Link>
+            </h3>
+          )}
+          {course.description && (
+            <p className="course__content-4">{course.description}</p>
+          )}
         </div>
-        {course.title && (
-          <h3 className="course__title">
-            <Link to={course.link}>{course.title}</Link>
-          </h3>
-        )}
-        {course.description && (
-          <p className="course__content-4">{course.description}</p>
-        )}
         {course.btn.link && (
           <Link
             className="course__course-btn text-white btn-hover-bubble"
