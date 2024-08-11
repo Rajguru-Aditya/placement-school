@@ -1,4 +1,4 @@
-import HeroOne from "@/components/Hero/HeroOne";
+import HeroOne from "@/components/Hero/HeroThree";
 import PartnerOne from "@/components/Partner/PartnerOne";
 import CourseOne from "@/components/Course/CourseTwo";
 import ServiceOne from "@/components/Service/ServiceOne";

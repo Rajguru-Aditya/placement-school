@@ -132,6 +132,7 @@ import HeroTwoShapeFive from "/assets/imgs/shape/hero-shapefour-8.webp";
 import HeroTwoShapeSix from "/assets/imgs/shape/hero-shapefour-9.webp";
 import HeroTwoShapeSeven from "/assets/imgs/shape/hero-shapefour-11.webp";
 import HeroTwoShapeEight from "/assets/imgs/bg/1.webp";
+import HeroBannerImg from "/assets/imgs/hero/heroBannerImg.webp";
 
 const heroTwo = {
   title: {
@@ -163,15 +164,16 @@ import HeroThreeShapeFour from "/assets/imgs/shape/banner-6-4.webp";
 
 const heroThree = {
   title: {
-    sliceOne: "Let a health coach guide you a better",
+    sliceOne: "Achieve Your Career Goals with Confidence",
     sliceTwo: "Health",
   },
   description:
-    "At Tomorrow Health, we build technology that improves the way home-based care.",
+    "Unlock Your Potential with Our Expert-Led Courses and Placement Guarantee",
   btn: {
     link: "contact",
-    text: "Get Started",
+    text: "Placement Guarantee",
   },
+  image: HeroBannerImg,
   shapeOne: HeroThreeShapeOne,
   shapeTwo: HeroThreeShapeTwo,
   shapeThree: HeroThreeShapeThree,
