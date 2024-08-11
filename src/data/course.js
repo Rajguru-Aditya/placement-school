@@ -167,10 +167,10 @@ const courseTwo = {
   },
   courses: [
     {
-      image: CourseTwoImageOne,
-      title: "MATHS for Kids",
+      image: "https://img.freepik.com/free-photo/corporate-management-strategy-solution-branding-concept_53876-167088.jpg?t=st=1723377221~exp=1723380821~hmac=57f94616414e47942ee12aeb30e7a29b5117e4f16336e65820bb89d79c1a9ddf&w=1060",
+      title: "Digital Marketing",
       description:
-        "Metus aliquam eleifend mi in nulla posuere thsi sollicitudin",
+        "Master Digital Marketing and Drive Results",
       link: "course-detail",
       price: "$12",
       discount: "60%",
@@ -184,10 +184,10 @@ const courseTwo = {
       },
     },
     {
-      image: CourseTwoImageTwo,
-      title: "Science for Kids",
+      image: "https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149051556.jpg?t=st=1723377178~exp=1723380778~hmac=d5658ac732423a744fa6a2fe3fad8d5a4b677bc53b890190262215b213949919&w=1060",
+      title: "UI/UX Design ",
       description:
-        "Metus aliquam eleifend mi in nulla posuere thsi sollicitudin",
+        "Design Engaging User Experiences",
       link: "course-detail",
       price: "$13",
       discount: "60%",
@@ -201,10 +201,10 @@ const courseTwo = {
       },
     },
     {
-      image: CourseTwoImageThree,
-      title: "English for Kids",
+      image: "https://img.freepik.com/free-vector/desktop-smartphone-app-development_23-2148683810.jpg?t=st=1723377268~exp=1723380868~hmac=3e0a4862dcac17f31f3aa76b7279106c75ad7376f64b7bb1f9c9daef02b665c5&w=740",
+      title: "Development",
       description:
-        "Metus aliquam eleifend mi in nulla posuere thsi sollicitudin",
+        "Build Cutting-Edge Applications",
       link: "course-detail",
       price: "$15",
       discount: "60%",
